@@ -1,0 +1,62 @@
+Scripts from course React-Native - The Practical Guide (Udemy Platform)
+
+Difference between
+Expoo CLI
+
+Is thrd party service that we can ue , is free
+Manged app development writing code is easier . using device camera. More convincing less friction. We can leave the expo ecosystem any time it is good for start.
+We can switch to React Native
+
+React Native CLI
+React native is the tool provided by the React Native team and the community around React Native
+Bare bone development we need to set it up more
+less convenience featured
+Easier integration with native source code
+If we need to mix JavaScript code and Native devices source code better to use React Native CLI
+
+Installation , set up
+
+1. Install expo
+
+npm install -g expo-cli
+
+2. expo init 'name folder'
+
+3. Install on android or iOS device expo
+
+4. Start project
+
+npm start
+
+5. Will appear bar code, scan it with phone (iOS with camera)
+
+Setting up a local development environment
+
+If we don't have android device we need to install simulator Android Studio, which allow us to run emulator (virtual device manager)
+For iOS we need xcode software, its just for apple, will not work for windows (alternative is use cloud service)
+
+For xcode
+
+1. Open xcode
+2. Go tp preferences , go to locations select version
+   To run project on simulator
+3. Go to xcode->applications ->show package content->contents->developer->application->simulator app
+
+For android
+
+1. INstall Android studio
+2. Install virtual device (with ion for expo)
+3. Open emulator
+4. In command line press a, in running project
+
+//css - style application in react native
+inline styles
+stylesheet object
+
+Style on css syntax , but only a subset of properties and features is supported
+
+react native has own components which we can use (use doc)
+
+<View/> -> container , content , is able to hold component , not to display text. Can hold multiply components.
+
+If we want to display text we need to use <Text/> component

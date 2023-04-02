@@ -60,3 +60,9 @@ react native has own components which we can use (use doc)
 <View/> -> container , content , is able to hold component , not to display text. Can hold multiply components.
 
 If we want to display text we need to use <Text/> component
+
+### styling difference
+
+iOs doesn't support borderRadius in Text element, to go around we need to wrap text in View and add style in to.
+
+info : in react-natve we do not have cascading nature of css, where child elements and descendant elements, inherit styles from parent. We don't have style inheritance

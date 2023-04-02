@@ -45,7 +45,7 @@ For xcode
 For android
 
 1. INstall Android studio
-2. Install virtual device (with ion for expo)
+2. Install virtual device (with icon for expo, otherwise , it will not work)
 3. Open emulator
 4. In command line press a, in running project
 
@@ -66,3 +66,15 @@ If we want to display text we need to use <Text/> component
 iOs doesn't support borderRadius in Text element, to go around we need to wrap text in View and add style in to.
 
 info : in react-natve we do not have cascading nature of css, where child elements and descendant elements, inherit styles from parent. We don't have style inheritance
+
+### debugging
+
+1. Open deb iOS :command +d
+   android: control+m or click m in terminal
+
+   debug javascript remotely, open new tab in browser,
+
+   react devtool
+   install globally npm install -g react-devtools
+   run react-devtool
+   it will open new windows with dev tool, to see components, we have to open developer debug dev tool in simulator, and enable debug javascript remote. In dev tools we will see react-native components with props and state

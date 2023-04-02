@@ -1,6 +1,4 @@
 node_modules/
-RNCourse/node_modules/
-GuessMyNumber/node_modules/
 .expo/
 dist/
 npm-debug.*

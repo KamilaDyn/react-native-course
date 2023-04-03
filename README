@@ -67,6 +67,8 @@ iOs doesn't support borderRadius in Text element, to go around we need to wrap t
 
 info : in react-natve we do not have cascading nature of css, where child elements and descendant elements, inherit styles from parent. We don't have style inheritance
 
+to add border shadow we use : elevation in styleSheet
+
 ### debugging
 
 1. Open deb iOS :command +d

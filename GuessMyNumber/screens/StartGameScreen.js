@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { TextInput, View, StyleSheet, Alert } from "react-native";
-import { PrimaryButton } from "../components";
+import { TextInput, View, StyleSheet, Alert, Text } from "react-native";
+import { PrimaryButton, Title, InstructionText } from "../components";
+import Card from "../components/ui/Card";
 
 import { Colors } from "../constants";
 
@@ -30,44 +31,44 @@ function StartGameScreen({ onPickedNumber }) {
   }
 
   return (
-    <View style={styles.inputContainer}>
-      <TextInput
-        style={styles.numberInput}
-        maxLength={2}
-        keyboardType="number-pad"
-        value={enteredNumber}
-        onChangeText={numberInputHandler}
-      />
-      <View style={styles.buttonsContainer}>
-        <View style={styles.buttonContainer}>
-          <PrimaryButton onPress={resetInputHandler}>Reset</PrimaryButton>
+    <View style={styles.rootContainer}>
+      <Title>Guess My Number</Title>
+      <Card>
+        <InstructionText style={styles.instructionTextObject}>
+          Enter number
+        </InstructionText>
+        <TextInput
+          style={styles.numberInput}
+          maxLength={2}
+          keyboardType="number-pad"
+          value={enteredNumber}
+          onChangeText={numberInputHandler}
+        />
+        <View style={styles.buttonsContainer}>
+          <View style={styles.buttonContainer}>
+            <PrimaryButton onPress={resetInputHandler}>Reset</PrimaryButton>
+          </View>
+          <View style={styles.buttonContainer}>
+            <PrimaryButton onPress={confirmInputHandler}>Confirm</PrimaryButton>
+          </View>
         </View>
-        <View style={styles.buttonContainer}>
-          <PrimaryButton onPress={confirmInputHandler}>Confirm</PrimaryButton>
-        </View>
-      </View>
+      </Card>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  inputContainer: {
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 16,
+  rootContainer: {
+    flex: 1,
     marginTop: 100,
-    marginHorizontal: 24,
-    backgroundColor: Colors.primary800,
-    borderRadius: 8,
-    elevation: 4,
-    //for iOS add box shadow
-    shadowColor: "black",
-    // object with control how much the shadow should be offset from original object which belongs from left to right
-    shadowOffset: { width: 0, height: 2 },
-    //cantrol how much shadow expands
-    shadowRadius: 6,
-    // how shadow is transsparent
-    shadowOpacity: 0.25,
+    alignItems: "center",
+  },
+  instructionText: {
+    color: Colors.secondary500,
+    fontSize: 24,
+  },
+  instructionTextObject: {
+    marginBottom: 12,
   },
   numberInput: {
     height: 50,
@@ -76,7 +77,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     color: Colors.secondary500,
     marginVertical: 8,
-    fontWeight: "bold",
+    fontFamily: "open-sans-bold",
     width: 50,
     textAlign: "center",
   },

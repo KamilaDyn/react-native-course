@@ -1,4 +1,4 @@
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, Platform } from "react-native";
 import { Colors } from "../../constants";
 
 function Title({ children }) {
@@ -14,6 +14,8 @@ const styles = StyleSheet.create({
     borderColor: Colors.secondary500,
     borderWidth: 2,
     padding: 12,
+    maxWidth: "80%",
+    width: 300,
   },
 });
 

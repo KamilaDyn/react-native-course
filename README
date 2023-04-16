@@ -80,3 +80,9 @@ to add border shadow we use : elevation in styleSheet
    install globally npm install -g react-devtools
    run react-devtool
    it will open new windows with dev tool, to see components, we have to open developer debug dev tool in simulator, and enable debug javascript remote. In dev tools we will see react-native components with props and state
+
+#### Platform
+
+Api allows to detect in which platform app is running
+Platform.select({ ios: 0, android: 2 }) we define the iOS and the Android values. Select will return the appropriate value in its place based on th platform
+We can name component for anroid, for ex. Title.android.js this will run in android platform.

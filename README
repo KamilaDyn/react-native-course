@@ -86,3 +86,11 @@ to add border shadow we use : elevation in styleSheet
 Api allows to detect in which platform app is running
 Platform.select({ ios: 0, android: 2 }) we define the iOS and the Android values. Select will return the appropriate value in its place based on th platform
 We can name component for anroid, for ex. Title.android.js this will run in android platform.
+
+library used:
+
+<ul>
+<li>axios</li>
+<li> <a href='https://docs.expo.dev/versions/v46.0.0/sdk/app-loading/'>app-loading</a></li>
+<li><a href='https://reactnative.dev/docs/asyncstorage'>asyn storage</a></li>
+</ul>

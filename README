@@ -93,4 +93,8 @@ library used:
 <li>axios</li>
 <li> <a href='https://docs.expo.dev/versions/v46.0.0/sdk/app-loading/'>app-loading</a></li>
 <li><a href='https://reactnative.dev/docs/asyncstorage'>asyn storage</a></li>
+<li><a href='https://docs.expo.dev/versions/latest/sdk/imagepicker/'>image Picekr</a></li>
+<li><a href='https://docs.expo.dev/versions/latest/sdk/location/'>expo location</a></li>
+<li><a href='https://www.geoapify.com/get-started-with-maps-api'>geoapfy instead google map</a></li>
+<li><a href='https://docs.expo.dev/versions/latest/sdk/map-view/#installation'>react native map</a></li>
 </ul>

@@ -97,4 +97,6 @@ library used:
 <li><a href='https://docs.expo.dev/versions/latest/sdk/location/'>expo location</a></li>
 <li><a href='https://www.geoapify.com/get-started-with-maps-api'>geoapfy instead google map</a></li>
 <li><a href='https://docs.expo.dev/versions/latest/sdk/map-view/#installation'>react native map</a></li>
+<li><a href='https://docs.expo.dev/versions/latest/sdk/sqlite/' >sqlie db for device to store date with squile command</a></li>
+<li><a href='expo-app-loading'>app loading</a></li>
 </ul>

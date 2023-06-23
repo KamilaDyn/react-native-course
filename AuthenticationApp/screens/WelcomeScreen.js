@@ -12,7 +12,7 @@ function WelcomeScreen() {
         `https://expense-tracker--react-native-default-rtdb.firebaseio.com/message.json?auth=${token}`
       )
       .then((response) => setFetchedMessage(response.data))
-      .catch((error) => console.log(error));
+      .catch((error) => console.error(error));
   }, []);
 
   return (

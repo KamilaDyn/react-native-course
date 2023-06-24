@@ -57,9 +57,9 @@ Style on css syntax , but only a subset of properties and features is supported
 
 react native has own components which we can use (use doc)
 
-<View/> -> container , content , is able to hold component , not to display text. Can hold multiply components.
+'<View/>'-> container , content , is able to hold component , not to display text. Can hold multiply components.
 
-If we want to display text we need to use <Text/> component
+If we want to display text we need to use '<Text/>' component
 
 ### styling difference
 
@@ -91,7 +91,7 @@ library used:
 
 <ul>
 <li>axios</li>
-<li> <a href='https://docs.expo.dev/versions/v46.0.0/sdk/app-loading/'>app-loading</a></li>
+<li><a href='https://docs.expo.dev/versions/v46.0.0/sdk/app-loading/'>app-loading</a></li>
 <li><a href='https://reactnative.dev/docs/asyncstorage'>asyn storage</a></li>
 <li><a href='https://docs.expo.dev/versions/latest/sdk/imagepicker/'>image Picekr</a></li>
 <li><a href='https://docs.expo.dev/versions/latest/sdk/location/'>expo location</a></li>
@@ -174,7 +174,7 @@ EAS Build Service -> build app , and run in device
    <div>
       <p>Change app name, version (should be change when we update application in app store) </p>
       <p>Versions for <a href='https://docs.expo.dev/distribution/app-stores/#versioning-your-app'>iOS</a>and for <a href='https://developer.android.com/studio/publish/versioning'>android </a></p>
-      <a href='https://docs.expo.dev/versions/latest/config/app/'>app json configuration</a>
+      <p><a href='https://docs.expo.dev/versions/latest/config/app/'>app json configuration</a></p>
    </div>
 
    <div>
@@ -187,6 +187,7 @@ EAS Build Service -> build app , and run in device
    with cloud services on their service can build on two platform without mac </h3>
    <h3> 3. submit to app stores </h3>
 </div>
+
 ### without expo
 
 - configure project

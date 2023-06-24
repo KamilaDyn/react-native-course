@@ -151,6 +151,8 @@ we can install react native CLI globally -> npm install -g react-native-cli
 EAS Build Service -> build app , and run in device
 -standalone app are built Locally
 
+<div>
+
 ## Publishing React Native app
 
 ### with expo (Managed or Bare Workflow)
@@ -162,25 +164,29 @@ EAS Build Service -> build app , and run in device
   android: Control permission requested and shown in app store
   iOS: Define permission request text snippets </p>
 <p> App Name and Identifier: Set the visible app name, an app version and a unique app identifier</p>
-<div>
+</div>
+
 <div>
    <h4> Environment Variables: store app-wide variables securely (e.g. PI keys)</h4>
    <a href='https://docs.expo.dev/build-reference/variables/'> Environment variables and secrets </a>
 </div>
+
 <div>
    <p>Change app name, version (should be change when we update application in app store) </p>
    <p>Versions for <a href='https://docs.expo.dev/distribution/app-stores/#versioning-your-app'>iOS</a>and for <a href='https://developer.android.com/studio/publish/versioning'>android </a</p>
    <a href='https://docs.expo.dev/versions/latest/config/app/'>app json configuration</a>
 </div>
+
 <div>
    <h4> Icons and Splash Screen: Configure nd generate fitting icons an loading screens</h4>
    <p>replace icon and splash for custom image in assets folder <a href='https://docs.expo.dev/tutorial/configuration/'>doc</a>. Expo build different icons version for devices</p>
 </div>
+
 <h3> 2. Build app Binaries with Expo's Cloud Service
   (advantages: no local resources used and we can build for all target platform)
   with cloud services on their service can build on two platform without mac </h3>
 <h3> 3. submit to app stores </h3>
-
+</div>
 ### without expo
 
 - configure project

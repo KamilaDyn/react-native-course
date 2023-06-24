@@ -1,9 +1,9 @@
 Scripts from course React-Native - The Practical Guide (Udemy Platform)
 
 Difference between
-Expoo CLI
+Expo CLI
 
-Is thrd party service that we can ue , is free
+Is third party service that we can ue , is free
 Manged app development writing code is easier . using device camera. More convincing less friction. We can leave the expo ecosystem any time it is good for start.
 We can switch to React Native
 
@@ -100,3 +100,89 @@ library used:
 <li><a href='https://docs.expo.dev/versions/latest/sdk/sqlite/' >sqlie db for device to store date with squile command</a></li>
 <li><a href='expo-app-loading'>app loading</a></li>
 </ul>
+
+### Expo Managed Workflow, we hav project with a configuration, with native device feature.
+
+- easy to set up and work with
+  - quick and frictionless development
+  - no or very little configuration required
+  - build (cross-platform)- standalone app
+
+### Expo Bare workflow ->
+
+- relatively easy to set up and work with
+- convenient development
+- some configuration required
+- build (cross-platform) standalone apps
+
+Installation
+
+- expo init
+- choose bare workflow option
+
+Run on emulator
+
+- turn emulator on android on
+- run command npm run android
+
+this need to install <a href='https://docs.expo.dev/versions/latest/sdk/location/'>expo location </a> and follow instruction<a href='https://github.com/expo/expo/tree/sdk-48/packages/expo-location'>instruction</a>
+
+### Ejecting from expo to the bare Workflow
+
+- expo eject
+- accept process 'yes' (will not return changes)
+- name project com.companyname.projectname (it is a identifier, which is used later for publish app)
+
+- run with npm run android
+
+### React native CLI
+
+- more complex setup
+- convenient development
+- can require more configuration effort
+
+Installation
+
+npm react-native init projectName
+confirm process
+
+we can install react native CLI globally -> npm install -g react-native-cli
+
+EAS Build Service -> build app , and run in device
+-standalone app are built Locally
+
+## Publishing React Native app
+
+### with expo (Managed or Bare Workflow)
+
+<div>
+   <h3> 1. configure the project</h3>
+
+<p> permissions if we use camera, location etc , ask for permission
+  android: Control permission requested and shown in app store
+  iOS: Define permission request text snippets </p>
+<p> App Name and Identifier: Set the visible app name, an app version and a unique app identifier</p>
+<div>
+<div>
+   <h4> Environment Variables: store app-wide variables securely (e.g. PI keys)</h4>
+   <a href='https://docs.expo.dev/build-reference/variables/'> Environment variables and secrets </a>
+</div>
+<div>
+   <p>Change app name, version (should be change when we update application in app store) </p>
+   <p>Versions for <a href='https://docs.expo.dev/distribution/app-stores/#versioning-your-app'>iOS</a>and for <a href='https://developer.android.com/studio/publish/versioning'>android </a</p>
+   <a href='https://docs.expo.dev/versions/latest/config/app/'>app json configuration</a>
+</div>
+<div>
+   <h4> Icons and Splash Screen: Configure nd generate fitting icons an loading screens</h4>
+   <p>replace icon and splash for custom image in assets folder <a href='https://docs.expo.dev/tutorial/configuration/'>doc</a>. Expo build different icons version for devices</p>
+</div>
+<h3> 2. Build app Binaries with Expo's Cloud Service
+  (advantages: no local resources used and we can build for all target platform)
+  with cloud services on their service can build on two platform without mac </h3>
+<h3> 3. submit to app stores </h3>
+
+### without expo
+
+- configure project
+- build app binaries locally , (for iOS, can be done in mac)
+- submit to app stores

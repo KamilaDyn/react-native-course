@@ -213,7 +213,7 @@ EAS Build Service -> build app, and run in the device
 - build app binaries locally, (for iOS, can be done in mac)
 - submit to app stores
 
-Build Expo App with EAS
+#### Build Expo App with EAS
 
 <div>
 <a href='https://docs.expo.dev/build/setup/'> build EAS</a>
@@ -239,6 +239,75 @@ choose platform in which want to build, it will create eas.json file
 
 - run a build: for android -> eas build --platform android
   for iOS eas build --platform ios
--
 
 </div>
+
+#### Build without expo (react-native)
+
+##### iOS
+
+(to publish app in app store , we need to have paid membership)
+
+- open in expo xc-workspace folder
+- add identifier
+- change build number
+- set up icon (Appicon)
+- choose simulator version
+
+- after build in info.plist folder , in exceptions remove localhost (for production )
+- in product -> scheme -> add scheme change debug for release (for production)
+- add appID in developer app , to register app and publish
+- add app in app store connect
+- click build
+  after build , there is archive option available, via archive we connect app to store
+
+##### Android
+
+- generate key store <a href='https://reactnative.dev/docs/signed-apk-android'>key store</a>
+- setting gradle <a href='https://reactnative.dev/docs/signed-apk-android#setting-up-gradle-variables'>variables</a> and singing config
+- run command ./gradlew bundleRelease
+- created app under app-> build-> generated->outputs ->release ->app.aab
+- in google play console , create new application (app name , description etc)
+- in production manage , create release, upload application
+
+to add icons for application, do it via android studio, app-> res-> click new ->image assets
+
+There, you can configure three important things:
+
+- The App name as it appears on the home screen: <a href='https://stackoverflow.com/questions/5443304/how-to-change-an-android-apps-name'>change app name</a>
+
+- The bundle identifier & package name of the app (also requires tweaking in other files): <a href='https://developer.android.com/studio/build/application-id'>app id</a>
+
+- The permissions of the app: <a href='https://developer.android.com/guide/topics/manifest/manifest-intro#perms' target='_blank'>permission</a>
+
+You should also set an app version and change it with every app update. This is done in the build.gradle file, see: <a href='https://developer.android.com/studio/publish/versioning'>versioning</a>
+
+## Local Notifications
+
+Notifications that are triggered by the installed app, for the local device
+
+- not sent to any other user or devices
+- are scheduled, delivered and handled on the same device (no server involved)
+
+for android notification permission is added automatically , for iOS must be added special permission <a href='https://docs.expo.dev/versions/latest/sdk/notifications/#fetching-information-about-notifications-related-permissions'>permission</a>
+
+- complete list (+ explanations) of content properties here: <a href='https://docs.expo.dev/versions/latest/sdk/notifications/#notificationcontentinput'>notificationcontentinput </a>
+
+- And a complete list (+ explanations) of trigger properties here: <a href='https://docs.expo.dev/versions/latest/sdk/notifications/#notificationtriggerinput'>notificationtriggerinput</a>
+
+The trigger type may be confusing - it's basically a combination of multiple supported object types.
+
+- set an interval in seconds (as we did in the previous lecture) as described here: <a href='https://docs.expo.dev/versions/latest/sdk/notifications/#timeintervalnotificationtrigger'>time interval notification trigger</a>
+
+- set a specific date (incl. time) at which the notification will be delivered: <a href='https://docs.expo.dev/versions/latest/sdk/notifications/#datetriggerinput'>data trigger input</a>
+
+- set a daily time at which the notification will be sent (Android-only):<a href=' https://docs.expo.dev/versions/latest/sdk/notifications/#dailynotificationtrigger'>daily notification triger</a>
+
+- set weekly trigger (Android-only): <a href='https://docs.expo.dev/versions/latest/sdk/notifications/#weeklynotificationtrigger'>weekly notification trigger</a>
+
+- set a yearly trigger (Android-only): https://docs.expo.dev/versions/latest/sdk/notifications/#yearlynotificationtrigger
+
+- set a specific date (iOS-only): <a href='https://docs.expo.dev/versions/latest/sdk/notifications/#calendarnotificationtrigger'>calendar notification trigger</a>
+
+<p><a href='https://expo.dev/notifications'>Notification tool</a></p>
+<p><a href=' https://docs.expo.dev/push-notifications/sending-notifications/#http2-api'>sending notification from device</a></p>

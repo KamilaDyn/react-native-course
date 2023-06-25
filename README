@@ -105,17 +105,19 @@ We can name components for android, for ex. Title.android.js will run on the and
 
 ## library used:
 
+<div>
 <ul>
 <li>axios</li>
-<li><a href='https://docs.expo.dev/versions/v46.0.0/sdk/app-loading/'> app-loading</a></li>
-<li><a href='https://reactnative.dev/docs/asyncstorage'>asyn storage</a></li>
-<li><a href='https://docs.expo.dev/versions/latest/sdk/imagepicker/'> image Picekr</a></li>
-<li><a href='https://docs.expo.dev/versions/latest/sdk/location/'> expo location</a></li>
-<li><a href='https://www.geoapify.com/get-started-with-maps-api'> geoapfy instead google map</a></li>
-<li><a href='https://docs.expo.dev/versions/latest/sdk/map-view/#installation'> react native map</a></li>
-<li><a href='https://docs.expo.dev/versions/latest/sdk/sqlite/' > sqlie db for device to store date with squile command</a></li>
-<li><a href='expo-app-loading'>app loading</a></li>
+<li><a href='https://docs.expo.dev/versions/v46.0.0/sdk/app-loading/'  target="_blank"> app-loading</a></li>
+<li><a href='https://reactnative.dev/docs/asyncstorage'  target="_blank">asyn storage</a></li>
+<li><a href='https://docs.expo.dev/versions/latest/sdk/imagepicker/'  target="_blank"> image Picekr</a></li>
+<li><a href='https://docs.expo.dev/versions/latest/sdk/location/'  target="_blank"> expo location</a></li>
+<li><a href='https://www.geoapify.com/get-started-with-maps-api'  target="_blank"> geoapfy instead google map</a></li>
+<li><a href='https://docs.expo.dev/versions/latest/sdk/map-view/#installation'  target="_blank"> react native map</a></li>
+<li><a href='https://docs.expo.dev/versions/latest/sdk/sqlite/'  target="_blank" > sqlie db for device to store date with squile command</a></li>
+<li><a href='expo-app-loading'  target="_blank">app loading</a></li>
 </ul>
+</div>
 
 ### Expo Managed Workflow, we have a project with a configuration, with a native device feature.
 
@@ -141,7 +143,7 @@ Run on emulator
 - turn the emulator on android on
 - run command npm run android
 
-this need to install <a href='https://docs.expo.dev/versions/latest/sdk/location/'>expo location </a> and follow instruction<a href='https://github.com/expo/expo/tree/sdk-48/packages/expo-location'>instruction</a>
+this need to install <a href='https://docs.expo.dev/versions/latest/sdk/location/' target="_blank">expo location </a> and follow instruction<a href='https://github.com/expo/expo/tree/sdk-48/packages/expo-location' target="_blank">instruction</a>
 
 ### Ejecting from expo to the bare Workflow
 
@@ -186,18 +188,18 @@ EAS Build Service -> build app, and run in the device
 
    <div>
       <h4> Environment Variables: store app-wide variables securely (e.g. PI keys)</h4>
-      <a href='https://docs.expo.dev/build-reference/variables/'> Environment variables and secrets </a>
+      <a href='https://docs.expo.dev/build-reference/variables/' target="_blank"> Environment variables and secrets </a>
    </div>
 
    <div>
       <p>Change app name, and version (should be changed when we update the application in the app store) </p>
-      <p>Versions for <a href='https://docs.expo.dev/distribution/app-stores/#versioning-your-app'> iOS</a> and for <a href='https://developer.android.com/studio/publish/versioning'> android </a></p>
-      <p><a href='https://docs.expo.dev/versions/latest/config/app/'> app json configuration</a></p>
+      <p>Versions for <a href='https://docs.expo.dev/distribution/app-stores/#versioning-your-app'  target="_blank"> iOS</a> and for <a href='https://developer.android.com/studio/publish/versioning'> android </a></p>
+      <p><a href='https://docs.expo.dev/versions/latest/config/app/'  target="_blank"> app json configuration</a></p>
    </div>
 
    <div>
       <h4> Icons and Splash Screen: Configure nd generate fitting icons an loading screens</h4>
-      <p>replace icon and splash for custom image in assets folder <a href='https://docs.expo.dev/tutorial/configuration/'> doc</a>. Expo build different icons version for devices</p>
+      <p>replace icon and splash for custom image in assets folder <a href='https://docs.expo.dev/tutorial/configuration/' target="_blank"> doc</a>. Expo build different icons version for devices</p>
    </div>
 
    <h3> 2. Build app Binaries with Expo's Cloud Service

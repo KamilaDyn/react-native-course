@@ -1,5 +1,8 @@
-Scripts from course React-Native - The Practical Guide (Udemy Platform)
+#
 
+## Scripts from course React-Native - The Practical Guide (Udemy Platform)
+
+<div>
 Difference between
 Expo CLI
 
@@ -14,6 +17,11 @@ less convenience featured
 Easier integration with native source code
 If we need to mix JavaScript code and Native devices source code better to use React Native CLI
 
+</div>
+
+#
+
+<div>
 Installation , set up
 
 1. Install expo
@@ -49,7 +57,11 @@ For android
 3. Open emulator
 4. In the command line press a, in running the project
 
-// css - style application in react native
+</div>
+
+#
+
+css - style application in react native
 inline styles
 stylesheet object
 
@@ -69,6 +81,8 @@ info : in react-natve we do not have cascading nature of css, where child elemen
 
 to add border shadow we use: elevation in styleSheet
 
+#
+
 ### debugging
 
 1. Open deb iOS :command +d
@@ -87,7 +101,9 @@ API allows to detect which platform the app is running
 Platform.select({ ios: 0, android: 2 }) we define the iOS and the Android values. Select will return the appropriate value in its place based on the platform
 We can name components for android, for ex. Title.android.js will run on the android platform.
 
-library used:
+#
+
+## library used:
 
 <ul>
 <li>axios</li>
@@ -141,7 +157,7 @@ this need to install <a href='https://docs.expo.dev/versions/latest/sdk/location
 - convenient development
 - can require more configuration effort
 
-Installation
+## Installation
 
 npm react-native init projectName
 confirm process
@@ -150,6 +166,10 @@ we can install react native CLI globally -> npm install -g react-native-cli
 
 EAS Build Service -> build app, and run in the device
 -standalone apps are built Locally
+
+---
+
+#
 
 ## Publishing React Native app
 
@@ -171,13 +191,13 @@ EAS Build Service -> build app, and run in the device
 
    <div>
       <p>Change app name, and version (should be changed when we update the application in the app store) </p>
-      <p>Versions for <a href='https://docs.expo.dev/distribution/app-stores/#versioning-your-app'>iOS</a>and for <a href='https://developer.android.com/studio/publish/versioning'>android </a></p>
-      <p><a href='https://docs.expo.dev/versions/latest/config/app/'>app json configuration</a></p>
+      <p>Versions for <a href='https://docs.expo.dev/distribution/app-stores/#versioning-your-app'> iOS</a> and for <a href='https://developer.android.com/studio/publish/versioning'> android </a></p>
+      <p><a href='https://docs.expo.dev/versions/latest/config/app/'> app json configuration</a></p>
    </div>
 
    <div>
       <h4> Icons and Splash Screen: Configure nd generate fitting icons an loading screens</h4>
-      <p>replace icon and splash for custom image in assets folder <a href='https://docs.expo.dev/tutorial/configuration/'>doc</a>. Expo build different icons version for devices</p>
+      <p>replace icon and splash for custom image in assets folder <a href='https://docs.expo.dev/tutorial/configuration/'> doc</a>. Expo build different icons version for devices</p>
    </div>
 
    <h3> 2. Build app Binaries with Expo's Cloud Service

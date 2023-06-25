@@ -151,8 +151,6 @@ we can install react native CLI globally -> npm install -g react-native-cli
 EAS Build Service -> build app , and run in device
 -standalone app are built Locally
 
-<div>
-
 ## Publishing React Native app
 
 ### with expo (Managed or Bare Workflow)
@@ -186,7 +184,6 @@ EAS Build Service -> build app , and run in device
    (advantages: no local resources used and we can build for all target platform)
    with cloud services on their service can build on two platform without mac </h3>
    <h3> 3. submit to app stores </h3>
-</div>
 
 ### without expo
 

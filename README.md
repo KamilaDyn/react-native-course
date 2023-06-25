@@ -212,3 +212,33 @@ EAS Build Service -> build app, and run in the device
 - configure project
 - build app binaries locally, (for iOS, can be done in mac)
 - submit to app stores
+
+Build Expo App with EAS
+
+<div>
+<a href='https://docs.expo.dev/build/setup/'> build EAS</a>
+1. Create account in expo
+2. Login via terminal in expo -> eas login
+4. Configure the project 
+- run command:  eas build:configure
+
+to test application
+in eas.json add buildType: 'apk' inside "build": { preview:{"android":{"buildType": 'apk' }}...}
+to test run preview
+
+eas build -p android --profile preview
+or for ios
+eas build -p ios --profile preview
+
+(this is just for testing mode not for production to publish in google app store )
+
+- add unique identifier: for example: com.companyName.appName (after confirm, it will be added in eas.json)
+- generate new Key store ( or add manually )
+
+choose platform in which want to build, it will create eas.json file
+
+- run a build: for android -> eas build --platform android
+  for iOS eas build --platform ios
+-
+
+</div>

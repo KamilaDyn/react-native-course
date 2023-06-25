@@ -45,47 +45,47 @@ For xcode
 For android
 
 1. INstall Android studio
-2. Install virtual device (with icon for expo, otherwise , it will not work)
+2. Install a virtual device (with an icon for the expo, otherwise, it will not work)
 3. Open emulator
-4. In command line press a, in running project
+4. In the command line press a, in running the project
 
-//css - style application in react native
+// css - style application in react native
 inline styles
 stylesheet object
 
-Style on css syntax , but only a subset of properties and features is supported
+Style on css syntax, but only a subset of properties and features is supported
 
-react native has own components which we can use (use doc)
+react-native has its own components which we can use (use doc)
 
-'<View/>'-> container , content , is able to hold component , not to display text. Can hold multiply components.
+'<View/>'-> container, content , can hold component, not display text. Can have multiply components.
 
 If we want to display text we need to use '<Text/>' component
 
 ### styling difference
 
-iOs doesn't support borderRadius in Text element, to go around we need to wrap text in View and add style in to.
+iOs doesn't support borderRadius in the Text element, to go around we need to wrap text in View and add style in to.
 
 info : in react-natve we do not have cascading nature of css, where child elements and descendant elements, inherit styles from parent. We don't have style inheritance
 
-to add border shadow we use : elevation in styleSheet
+to add border shadow we use: elevation in styleSheet
 
 ### debugging
 
 1. Open deb iOS :command +d
    android: control+m or click m in terminal
 
-   debug javascript remotely, open new tab in browser,
+   debug javascript remotely, open a new tab in the browser,
 
    react devtool
    install globally npm install -g react-devtools
    run react-devtool
-   it will open new windows with dev tool, to see components, we have to open developer debug dev tool in simulator, and enable debug javascript remote. In dev tools we will see react-native components with props and state
+   it will open new windows with the dev tool, to see components, we have to open the developer debug dev tool in the simulator and enable debug javascript remote. In dev tools, we will see react-native components with props and state
 
 #### Platform
 
-Api allows to detect in which platform app is running
-Platform.select({ ios: 0, android: 2 }) we define the iOS and the Android values. Select will return the appropriate value in its place based on th platform
-We can name component for anroid, for ex. Title.android.js this will run in android platform.
+API allows to detect which platform the app is running
+Platform.select({ ios: 0, android: 2 }) we define the iOS and the Android values. Select will return the appropriate value in its place based on the platform
+We can name components for android, for ex. Title.android.js will run on the android platform.
 
 library used:
 
@@ -101,11 +101,11 @@ library used:
 <li><a href='expo-app-loading'>app loading</a></li>
 </ul>
 
-### Expo Managed Workflow, we hav project with a configuration, with native device feature.
+### Expo Managed Workflow, we have a project with a configuration, with a native device feature.
 
 - easy to set up and work with
   - quick and frictionless development
-  - no or very little configuration required
+  - no or minimal configuration required
   - build (cross-platform)- standalone app
 
 ### Expo Bare workflow ->
@@ -118,11 +118,11 @@ library used:
 Installation
 
 - expo init
-- choose bare workflow option
+- choose the bare workflow option
 
 Run on emulator
 
-- turn emulator on android on
+- turn the emulator on android on
 - run command npm run android
 
 this need to install <a href='https://docs.expo.dev/versions/latest/sdk/location/'>expo location </a> and follow instruction<a href='https://github.com/expo/expo/tree/sdk-48/packages/expo-location'>instruction</a>
@@ -131,7 +131,7 @@ this need to install <a href='https://docs.expo.dev/versions/latest/sdk/location
 
 - expo eject
 - accept process 'yes' (will not return changes)
-- name project com.companyname.projectname (it is a identifier, which is used later for publish app)
+- name project com.companyname.projectname (it is an identifier, which is used later for publishing the app)
 
 - run with npm run android
 
@@ -148,8 +148,8 @@ confirm process
 
 we can install react native CLI globally -> npm install -g react-native-cli
 
-EAS Build Service -> build app , and run in device
--standalone app are built Locally
+EAS Build Service -> build app, and run in the device
+-standalone apps are built Locally
 
 ## Publishing React Native app
 
@@ -158,8 +158,8 @@ EAS Build Service -> build app , and run in device
    <div>
       <h3> 1. configure the project</h3>
 
-   <p> permissions if we use camera, location etc , ask for permission
-   android: Control permission requested and shown in app store
+   <p> permissions if we use camera, location etc, ask for permission
+   android: Control permission requested and shown in the app store
    iOS: Define permission request text snippets </p>
    <p> App Name and Identifier: Set the visible app name, an app version and a unique app identifier</p>
    </div>
@@ -170,7 +170,7 @@ EAS Build Service -> build app , and run in device
    </div>
 
    <div>
-      <p>Change app name, version (should be change when we update application in app store) </p>
+      <p>Change app name, and version (should be changed when we update the application in the app store) </p>
       <p>Versions for <a href='https://docs.expo.dev/distribution/app-stores/#versioning-your-app'>iOS</a>and for <a href='https://developer.android.com/studio/publish/versioning'>android </a></p>
       <p><a href='https://docs.expo.dev/versions/latest/config/app/'>app json configuration</a></p>
    </div>
@@ -181,12 +181,12 @@ EAS Build Service -> build app , and run in device
    </div>
 
    <h3> 2. Build app Binaries with Expo's Cloud Service
-   (advantages: no local resources used and we can build for all target platform)
-   with cloud services on their service can build on two platform without mac </h3>
+   (advantages: no local resources used and we can build for all target platforms)
+   with cloud services on their service can build on two platforms without mac </h3>
    <h3> 3. submit to app stores </h3>
 
 ### without expo
 
 - configure project
-- build app binaries locally , (for iOS, can be done in mac)
+- build app binaries locally, (for iOS, can be done in mac)
 - submit to app stores
